@@ -12,8 +12,8 @@ Vue.use(msal, {
     clientId: 'bf5b6be8-ef0d-42ee-9efc-c655a2f3e05e',
     authority:
       'https://login.microsoftonline.com/0346c3b8-bdbe-414d-b295-9027af7ef797',
-    redirectUri: "https://vue-booker.herokuapp.com//#/default", // Redirect Url after sign in
-    postLogoutRedirectUri: "https://vue-booker.herokuapp.com//#/login",
+    redirectUri: "https://vue-booker.herokuapp.com/#/default", // Redirect Url after sign in
+    postLogoutRedirectUri: "https://vue-booker.herokuapp.com/#/login",
     globalMixin : true,
     navigateToLoginRequestUrl:false
   },
