@@ -7,11 +7,11 @@ import Emitter from 'tiny-emitter'
 import msal, { msalMixin } from 'vue-msal'
 
 Vue.use(msal, {
-  
+  // Enable SSO
   auth: {
-    clientId: 'bf5b6be8-ef0d-42ee-9efc-c655a2f3e05e',
+    clientId: 'azureClientID',
     authority:
-      'https://login.microsoftonline.com/0346c3b8-bdbe-414d-b295-9027af7ef797',
+      'azureAuthority',
     redirectUri: "http://localhost:8080/#/default", // Redirect Url after sign in
     postLogoutRedirectUri: "http://localhost:8080/#/login",
     globalMixin : true,
